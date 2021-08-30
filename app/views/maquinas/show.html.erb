@@ -1,0 +1,105 @@
+<style> 
+html {
+  font-family: Arial;
+  font-size: 16px;
+  background: #DCDCDC;
+}
+.sidebar {
+    position: fixed;
+    width: 25%;
+    height: 100vh;
+    background: #312450;
+    font-size: 35px;
+    text-align: center;
+  }
+.home{
+    padding-top: 80px;
+  }
+.maquinas {
+  position: relative;
+  width: 75%;
+  float: right;
+  height: 100vh;
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+}
+.principal {
+  text-align: center;
+  position: absolute;
+  margin-top: 100px;
+  width:100%
+}
+.show_maquina{
+  display: inline-block;
+  position: relative;
+  height: 350px;
+  width:100%
+}
+.button{
+  padding-top: 10px;
+}
+</style>
+
+<main class="main">
+    <aside class="sidebar">
+      <div class="home">
+        <a href="http://localhost:3000/maquinas" style="color:#DCDCDC">HOME</a>
+      </div>
+     <hr style="background: #DCDCDC">
+    </aside>
+
+    <section class="maquinas">
+      <div class="principal">
+        <div class="show_maquina">
+          <div id="main" class="container-fluid">
+
+           <p id="notice"><%= notice %></p>
+
+            <p>
+              <strong>Tipo:</strong>
+              <%= @maquina.tipo %>
+            </p>
+
+            <p>
+              <strong>Nome:</strong>
+              <%= @maquina.nome %>
+            </p>
+
+            <p>
+              <strong>Descri&ccedil;&atilde;o:</strong>
+              <%= @maquina.descricao %>
+            </p>
+
+            <p>
+              <strong>Garantia:</strong>
+              <%= @maquina.garantia %>
+            </p>
+
+            <p>
+              <strong>Compra:</strong>
+              <%= @maquina.compra %>
+            </p>
+
+            <p>
+              <strong>Quebrada:</strong>
+              <%= @maquina.quebrada %>
+           </p>
+
+          <div class="button">
+            <%= link_to 'Alterar', edit_maquina_path(@maquina), class:"btn btn-warning" %> 
+            <%= link_to 'Voltar', maquinas_path, class:"btn btn-info" %> 
+         </div>
+        </div>
+        </div>
+       </div>
+    </div>
+    </section>
+</main>
+
+

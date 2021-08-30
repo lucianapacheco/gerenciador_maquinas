@@ -1,0 +1,55 @@
+<%= form_with(model: maquina) do |form| %>
+  <% if maquina.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(maquina.errors.count, "error") %> prohibited this maquina from being saved:</h2>
+
+      <ul>
+        <% maquina.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+<div class="container">
+
+    <div class="row justify-content-center pt-4">
+      <%= form.label :tipo, class:"col-2 col align-self-center" %>   
+      <%= form.text_field :tipo, class:"form-control col-6" %>
+    </div>
+
+    <div class="row justify-content-center pt-4">
+        <%= form.label :nome , class:"col-2 col align-self-center" %>
+        <%= form.text_field :nome, class:"form-control col-6 " %>
+    </div>
+
+    <div class="row justify-content-center pt-4">
+        <%= form.label :descricao, class:"col-2 col align-self-center" %>
+        <%= form.text_area :descricao, class:"form-control col-6" %>
+    </div>
+
+    <div class="row justify-content-center pt-4">
+        <%= form.label :garantia, class:"col-2 col align-self-center" %>
+        <%= form.number_field :garantia,  class:"form-control col-6" %>
+    </div>
+
+    <div class="row justify-content-center pt-4">
+        <%= form.label :compra , class:"col-2 col align-self-center"%>
+        <%= form.date_select :compra %>
+    </div>
+
+    <div class="row justify-content-center pt-2" >
+      <div class="col-5" class="field">
+        <%= form.label :quebrada %>
+        <%= form.check_box :quebrada %>
+      </div>
+    </div>
+
+    <div class="row justify-content-center pt-2 ">
+      <div class="col-4" class="actions">
+      <%= form.submit "Adicionar Máquina", class:"btn btn-primary" %> 
+      </div>
+    </div>
+   </div>
+</div>
+<% end %>
