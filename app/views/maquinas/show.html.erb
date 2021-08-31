@@ -1,105 +1,99 @@
 <style> 
-html {
-  font-family: Arial;
-  font-size: 16px;
-  background: #DCDCDC;
-}
-.sidebar {
-    position: fixed;
-    width: 25%;
+ 
+  .maquinas {
+    position: relative;
+    width: 100%;
+    float: right;
     height: 100vh;
-    background: #312450;
-    font-size: 35px;
+    
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+    }
+  }
+  .principal{
     text-align: center;
+    position: absolute;
+    margin-top: 35px;
+    width:100%
   }
-.home{
-    padding-top: 80px;
+  .show_maquina{
+    display: inline-block;
+    position: relative;
+    height: 493px;
+    width:60%
   }
-.maquinas {
-  position: relative;
-  width: 75%;
-  float: right;
-  height: 100vh;
-  
-  .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-  }
-}
-.principal {
-  text-align: center;
-  position: absolute;
-  margin-top: 100px;
-  width:100%
-}
-.show_maquina{
-  display: inline-block;
-  position: relative;
-  height: 350px;
-  width:100%
-}
-.button{
-  padding-top: 10px;
-}
+
 </style>
-
-<main class="main">
-    <aside class="sidebar">
-      <div class="home">
-        <a href="http://localhost:3000/maquinas" style="color:#DCDCDC">HOME</a>
-      </div>
-     <hr style="background: #DCDCDC">
-    </aside>
-
-    <section class="maquinas">
-      <div class="principal">
-        <div class="show_maquina">
-          <div id="main" class="container-fluid">
-
-           <p id="notice"><%= notice %></p>
-
-            <p>
-              <strong>Tipo:</strong>
-              <%= @maquina.tipo %>
-            </p>
-
-            <p>
-              <strong>Nome:</strong>
-              <%= @maquina.nome %>
-            </p>
-
-            <p>
-              <strong>Descri&ccedil;&atilde;o:</strong>
-              <%= @maquina.descricao %>
-            </p>
-
-            <p>
-              <strong>Garantia:</strong>
-              <%= @maquina.garantia %>
-            </p>
-
-            <p>
-              <strong>Compra:</strong>
-              <%= @maquina.compra %>
-            </p>
-
-            <p>
-              <strong>Quebrada:</strong>
-              <%= @maquina.quebrada %>
-           </p>
-
-          <div class="button">
-            <%= link_to 'Alterar', edit_maquina_path(@maquina), class:"btn btn-warning" %> 
-            <%= link_to 'Voltar', maquinas_path, class:"btn btn-info" %> 
-         </div>
+<div class="container-fluid overflow-hidden">
+    <div class="row vh-100 overflow-auto">
+        <div class="col-12 col-sm-3 col-xl-2 px-sm-2 px-0 bg-dark d-flex sticky-top">
+            <div class="d-flex flex-sm-column flex-row flex-grow-1 align-items-center align-items-sm-start px-3 pt-2 text-white">
+                <a href="/" class="d-flex align-items-center pb-sm-3 mb-md-0 me-md-auto text-white text-decoration-none">
+                </a>
+                <ul class="nav nav-pills flex-sm-column flex-row flex-nowrap flex-shrink-1 flex-sm-grow-0 flex-grow-1 mb-sm-auto mb-0 justify-content-center align-items-center align-items-sm-start" id="menu">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link px-sm-0 px-2">
+                            <i class="fs-5 bi-house"></i><span class="ms-1 d-none d-sm-inline">Home</span>
+                        </a>
+                    </li> 
+                    <li class="nav-item">
+                        <a href="#" class="nav-link px-sm-0 px-2">
+                            <i class="fs-5 bi-house"></i><span class="ms-1 d-none d-sm-inline">Máquinas</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#submenu1" data-bs-toggle="collapse" class="nav-link px-sm-0 px-2">
+                            <i class="fs-5 bi-speedometer2"></i><span class="ms-1 d-none d-sm-inline">Usuários</span> </a>
+                    </li>
+                </ul>
+            </div>
         </div>
+        <div class="col d-flex flex-column h-sm-100">
+            <main class="row overflow-auto">
+                <div class="col pt-4">
+                    <section class="maquinas">
+                        <div class="principal">
+                            <div class="show_maquina">
+                                <p>
+                                <strong>Tipo:</strong>
+                                <%= @maquina.tipo %>
+                                </p>
+                                <p>
+                                <strong>Nome:</strong>
+                                <%= @maquina.nome %>
+                                </p>
+                                <p>
+                                <strong>Descri&ccedil;&atilde;o:</strong>
+                                <%= @maquina.descricao %>
+                                </p>
+                                <p>
+                                <strong>Garantia:</strong>
+                                <%= @maquina.garantia %>
+                                </p>
+                                <p>
+                                <strong>Compra:</strong>
+                                <%= @maquina.compra %>
+                                </p>
+                                <p>
+                                <strong>Quebrada:</strong>
+                                <%= @maquina.quebrada %>
+                                </p>
+                                <div>
+                                    <%= link_to 'Alterar', edit_maquina_path(@maquina), class:"btn btn-warning" %> 
+                                    <%= link_to 'Voltar', maquinas_path, class:"btn btn-info" %> 
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+            </main>
         </div>
-       </div>
     </div>
-    </section>
-</main>
+  </div>
+  
+
 
 
