@@ -1,3 +1,9 @@
+<style>
+a:link, a:visited {
+	text-decoration: none;
+  color:white
+	}
+</style>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
 
 <div class="container-fluid overflow-hidden">
@@ -8,17 +14,12 @@
                 </a>
                 <div>
                 <ul class="nav nav-pills flex-sm-column flex-row flex-nowrap flex-shrink-1 flex-sm-grow-0 flex-grow-1 mb-sm-auto mb-0 justify-content-center align-items-center align-items-sm-start" id="menu">
-                    <li class="nav-item" style="font-size: 30px">
-                        <a class="nav-link px-sm-0 px-2">
-                           <a href="/home"><span class="ms-1 d-none d-sm-inline">Home</span></a>
-                        </a>
-                    </li> 
-                    <li class="nav-item" style="font-size: 30px">
+                    <li class="nav-item" style="font-size: 20px">
                         <a class="nav-link px-sm-0 px-2">
                             <a href="/maquinas"><span class="ms-1 d-none d-sm-inline">Máquinas</span></a>
                         </a>
                     </li>
-                    <li class="nav-item" style="font-size: 30px">
+                    <li class="nav-item" style="font-size: 20px">
                         <a class="nav-link px-sm-0 px-2">
                             <a><%= link_to 'Sair', destroy_usuario_session_path, method: :delete %> <span class="ms-1 d-none d-sm-inline"></span></a>
                         </a>
@@ -27,7 +28,7 @@
                 </div>
             </div>
         </div>
-        
+
         <div class="col d-flex flex-column h-sm-100">
             <main class="row overflow-auto">
                 <div class="col pt-4">
@@ -84,7 +85,7 @@
                       </h6>
                       <p>
                       Diversas soluções em máquinas industriais para diversos segmentos de mercado. 
-                      Confira toda a linha de máquinas, equipamentos e acessórios que a LuciMáquinas tem a oferecer.
+                      
                       </p>
                     </div>
                     <!-- Grid column -->
@@ -99,7 +100,6 @@
                         <a class="text-white">- Enfardadoras</a><br>
                         <a class="text-white">- Encaixotadoras</a><br>
                         <a class="text-white">- Dosadores</a><br>
-                        <a class="text-white">- Esteiras Transportadoras</a>
                       </p>             
                     </div>
                     <!-- Grid column -->

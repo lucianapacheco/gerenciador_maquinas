@@ -26,6 +26,10 @@
     height: 493px;
     width:60%
   }
+a:link, a:visited {
+	text-decoration: none;
+  color:white
+	}
 
 </style>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
@@ -38,17 +42,12 @@
                 </a>
                 <div>
                 <ul class="nav nav-pills flex-sm-column flex-row flex-nowrap flex-shrink-1 flex-sm-grow-0 flex-grow-1 mb-sm-auto mb-0 justify-content-center align-items-center align-items-sm-start" id="menu">
-                    <li class="nav-item" style="font-size: 30px">
-                        <a class="nav-link px-sm-0 px-2">
-                           <a href="/home"><span class="ms-1 d-none d-sm-inline">Home</span></a>
-                        </a>
-                    </li> 
-                    <li class="nav-item" style="font-size: 30px">
+                    <li class="nav-item" style="font-size: 20px">
                         <a class="nav-link px-sm-0 px-2">
                             <a href="/maquinas"><span class="ms-1 d-none d-sm-inline">Máquinas</span></a>
                         </a>
                     </li>
-                    <li class="nav-item" style="font-size: 30px">
+                    <li class="nav-item" style="font-size: 20px">
                         <a class="nav-link px-sm-0 px-2">
                             <a><%= link_to 'Sair', destroy_usuario_session_path, method: :delete %> <span class="ms-1 d-none d-sm-inline"></span></a>
                         </a>
