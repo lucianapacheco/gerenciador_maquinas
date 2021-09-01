@@ -9,17 +9,20 @@
                 <ul class="nav nav-pills flex-sm-column flex-row flex-nowrap flex-shrink-1 flex-sm-grow-0 flex-grow-1 mb-sm-auto mb-0 justify-content-center align-items-center align-items-sm-start" id="menu">
                     <li class="nav-item">
                         <a href="#" class="nav-link px-sm-0 px-2">
-                            <i class="fs-5 bi-house"></i><span class="ms-1 d-none d-sm-inline">Home</span>
+                            <i class="fs-5 bi-house"></i><a href="/home"><span class="ms-1 d-none d-sm-inline">Home</span></a>
                         </a>
                     </li> 
                     <li class="nav-item">
                         <a href="#" class="nav-link px-sm-0 px-2">
-                            <i class="fs-5 bi-house"></i><span class="ms-1 d-none d-sm-inline">Máquinas</span>
+                            <i class="fs-5 bi-house"></i><a href="/maquinas"><span class="ms-1 d-none d-sm-inline">Máquinas</span></a>
                         </a>
                     </li>
                     <li>
                         <a href="#submenu1" data-bs-toggle="collapse" class="nav-link px-sm-0 px-2">
                             <i class="fs-5 bi-speedometer2"></i><span class="ms-1 d-none d-sm-inline">Usuários</span> </a>
+                    </li>
+                    <li>
+                         <%= link_to 'Sair', destroy_usuario_session_path, method: :delete, class:"btn btn-primary mb-4"  %> 
                     </li>
                 </ul>
             </div>

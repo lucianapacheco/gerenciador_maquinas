@@ -249,29 +249,30 @@ h2 {
             <div class="collapse navbar-collapse" id="mob-navbar">
                 <ul class="navbar-nav mb-2 mb-lg-0 mx-auto">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link active" aria-current="page" href="#">HOME</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Sobre Nós</a>
+                        <a class="nav-link" href="#">SOBRE NÓS</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Máquinas</a>
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">MÁQUINAS</a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <li><a class="dropdown-item" href="#">Máquinas Industriais</a></li>
                             <li><a class="dropdown-item" href="#">Equipamentos</a></li>
-                            <li><a class="dropdown-item" href="http://localhost:3000/maquinas">Acessórios</a></li>
+                            <li><a class="dropdown-item" href="/maquinas">Acessórios</a></li>
                             <li><hr class="dropdown-divider" /></li>
                             <li><a class="dropdown-item" href="#">Explore Mais</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contato</a>
+                        <a class="nav-link" href="#">CONTATO</a>
                     </li>
                 </ul>
                 <form class="d-flex">
-                    <input class="form-control me-2" type="text" placeholder="Username" />
-                    <input class="form-control me-2" type="password" placeholder="Password" />
-                    <button class="btn btn-warning" type="submit">Login</button>
+                    
+                  <a  <%= link_to 'Login', new_usuario_session_path, class:"btn btn-warning"  %> href="/maquinas" ></a> 
+                    <%= link_to 'Cadastrar', new_usuario_registration_path, class:"btn btn-warning" %> 
+
                 </form>
             </div>
         </div>
@@ -285,7 +286,7 @@ h2 {
             <div class="col">
                 <div class="card h-100 shadow-sm"> <img src="https://static.wixstatic.com/media/69d861_be09851326c9444d945525bb060ba1fa~mv2.jpeg/v1/fill/w_406,h_400,al_c,q_80,usm_0.66_1.00_0.01/empacotadora.webp" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <div class="clearfix mb-3"> <span class="float-start price-hp">Empacotadora</span> <span class="float-end"><a class="text-muted small" href="#">Reviews</a></span> </div>
+                        <div class="clearfix mb-3"> <span class="float-start price-hp">Empacotadora</span> <span class="float-end"> </div>
                         <h5 class="card-title">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam quidem eaque ut eveniet aut quis rerum. Asperiores accusamus harum ducimus velit odit ut. Saepe, iste optio laudantium sed aliquam sequi.</h5>
                         <div class="text-center my-4"> <a href="#" class="btn btn-warning">SAIBA MAIS</a> </div>
                     </div>
@@ -336,10 +337,11 @@ h2 {
                     <!-- Grid column -->
                     <div class="col-md-3 col-lg-3 col-xl-3 mx-auto ">
                       <h6 class="text-uppercase mb-4 font-weight-bold">
-                        Roadmapps
+                        OlindaMáquinas
                       </h6>
                       <p>
-                      Diversas soluções em máquinas industriais para diversos segmentos de mercado.
+                      Diversas soluções em máquinas industriais para diversos segmentos de mercado. 
+                      Confira toda a linha de máquinas, equipamentos e acessórios que a OlindaMáquinas tem a oferecer.
                       </p>
                     </div>
                     <!-- Grid column -->
