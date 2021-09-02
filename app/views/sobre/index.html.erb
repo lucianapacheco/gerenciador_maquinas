@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>How To Create Bootstrap 5 Header With Login Form Design</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://www.markuptag.com/bootstrap/5/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    --font1: 'Heebo', sans-serif;
+    --font2: 'Fira Sans Extra Condensed', sans-serif;
+    --font3: 'Roboto', sans-serif
+}
+
+body {
+    font-family: var(--font3);
+    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%)
+}
+
+h2 {
+    font-weight: 900
+}
+
+.container-fluid {
+    max-width: 1200px
+}
+
+
+.btn {
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 5px 50px 5px 50px
+}
+
+.box .btn {
+    font-size: 1.5rem
+}
+
+@media (max-width: 1025px) {
+    .btn {
+        padding: 5px 40px 5px 40px
+    }
+}
+
+@media (max-width: 250px) {
+    .btn {
+        padding: 5px 30px 5px 30px
+    }
+}
+
+.btn-warning {
+    background: none #f7810a;
+    color: #ffffff;
+    fill: #ffffff;
+    border: none;
+    text-decoration: none;
+    outline: 0;
+    box-shadow: -1px 6px 19px rgba(247, 129, 10, 0.25);
+    border-radius: 100px
+}
+
+.btn-warning:hover {
+    background: none #ff962b;
+    color: #ffffff;
+    box-shadow: -1px 6px 13px rgba(255, 150, 43, 0.35)
+}
+
+.price-hp {
+    font-size: 1rem;
+    font-weight: 600;
+    color: darkgray
+}
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/home"><h2 class="text-warning">RoadMáquinas</h2></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mob-navbar" aria-label="Toggle">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mob-navbar">
+                <ul class="navbar-nav mb-2 mb-lg-0 mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/home">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/sobre">SOBRE NÓS</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">MÁQUINAS</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Máquinas Industriais</a></li>
+                            <li><a class="dropdown-item" href="#">Equipamentos</a></li>
+                            <li><a class="dropdown-item" href="/maquinas">Acessórios</a></li>
+                            <li><hr class="dropdown-divider" /></li>
+                            <li><a class="dropdown-item" href="#">Explore Mais</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contato">CONTATO</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    
+                    <%= link_to 'Login', new_usuario_session_path, class:"btn btn-warning"  %> 
+                    <%= link_to 'Cadastrar', new_usuario_registration_path, class:"btn btn-warning" %> 
+
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Bootstrap JS -->
+    <script src="https://www.markuptag.com/bootstrap/5/js/bootstrap.bundle.min.js"></script>
+    <main>
+    <!--Section: Contact v.2-->
+
+
+    <!--Section heading-->
+    <h2 class="h1-responsive font-weight-bold text-center my-4">Sobre a RoadMáquinas</h2>
+    <!--Section description-->
+    
+   
+    <p class="text-center w-responsive mx-auto mb-5 pl-5 pr-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget ligula ante. 
+    Nunc ut placerat diam. Sed ligula leo, molestie in justo et, elementum venenatis nulla. Nam eget nulla in ex molestie mollis. Nulla vehicula sagittis eleifend. Vivamus convallis, sem non volutpat varius, neque est finibus nunc, sit amet ultrices turpis leo non dui. Sed efficitur erat at lorem efficitur, non malesuada massa euismod. Proin congue maximus dui eu suscipit. Fusce aliquam molestie bibendum. Maecenas ipsum neque, accumsan ac dignissim nec, aliquam nec ex. </p>
+    
+    <img src="https://static.wixstatic.com/media/69d861_9a5acb5c66124b93b8e57883cbecfe3b~mv2.jpg/v1/fill/w_400,h_221,al_c,q_80/69d861_9a5acb5c66124b93b8e57883cbecfe3b~mv2.webp" class="rounded mx-auto d-block">
+    <br>
+
+<!--Section: Contact v.2-->
+</main>
+</body>
+
+<footer class="row bg-secondary text-white py-4 mt-auto">
+                      <div class="container p-5 pb-0">
+                <!-- Section: Links -->
+                <section>
+                  <!--Grid row-->
+                  <div class="row">
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-3 col-xl-3 mx-auto ">
+                      <h6 class="text-uppercase mb-4 font-weight-bold">
+                        RoadMáquinas
+                      </h6>
+                      <p>
+                      Diversas soluções em máquinas industriais para diversos segmentos de mercado. 
+                      
+                      </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <hr class="w-100 clearfix d-md-none" />
+
+                    <!-- Grid column -->
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto">
+                      <h6 class="text-uppercase mb-4 font-weight-bold" href="#">LINHA DE ​MÁQUINAS</h6>
+                      <p>
+                        <a class="text-white">- Empacotadoras</a><br>
+                        <a class="text-white">- Enfardadoras</a><br>
+                        <a class="text-white">- Encaixotadoras</a><br>
+                        <a class="text-white">- Dosadores</a><br>
+                      </p>             
+                    </div>
+                    <!-- Grid column -->
+
+                    <hr class="w-100 clearfix d-md-none" />
+
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto ">
+                      <h6 class="text-uppercase mb-4 font-weight-bold">
+                        NOSSOS HORÁRIOS
+                      </h6>
+                      <p>
+                        <a class="text-white">Segunda a Sexta, das 08:00 às 18:00h.</a>
+                      </p>
+                    </div>
+
+                    <!-- Grid column -->
+                    <hr class="w-100 clearfix d-md-none" />
+
+                    <!-- Grid column -->
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto ">
+                      <h6 class="text-uppercase mb-4 font-weight-bold">Contato</h6>
+                      <p><i class="fas fa-home mr-3"></i> R. do Bom Jesus, 125 - Recife </p>
+                      <p><i class="fas fa-phone mr-3"></i></i> Telefone: (81) 99991-4471 </p>  
+                        <a class="btn btn-outline-light btn-floating " class="text-white" role="button" href="https://www.rdmapps.com.br/">
+                        <i class="fas fa-building"></i> </a>
+
+                      <!-- GitHub -->
+                      <a class="btn btn-outline-light btn-floating text-white" role="button" href="https://github.com/lucianapacheco" >
+                        <i class="fab fa-github"> </i>
+                      </a>
+                    </div>
+                    <!-- Grid column -->
+                  </div>
+                  <!--Grid row-->
+                </section>
+              </div>
+            </footer>
+</html>

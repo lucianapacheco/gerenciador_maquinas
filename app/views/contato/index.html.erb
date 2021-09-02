@@ -31,89 +31,6 @@ h2 {
     max-width: 1200px
 }
 
-.card {
-    background: #fff;
-    box-shadow: 0 6px 10px rgba(0, 0, 0, .08), 0 0 6px rgba(0, 0, 0, .05);
-    transition: .3s transform cubic-bezier(.155, 1.105, .295, 1.12), .3s box-shadow, .3s -webkit-transform cubic-bezier(.155, 1.105, .295, 1.12);
-    border: 0;
-    border-radius: 1rem
-}
-
-.card-img,
-.card-img-top {
-    border-top-left-radius: calc(1rem - 1px);
-    border-top-right-radius: calc(1rem - 1px)
-}
-
-.card h5 {
-    overflow: hidden;
-    height: 56px;
-    font-weight: 900;
-    font-size: 1rem
-}
-
-.card-img-top {
-    width: 100%;
-    max-height: 180px;
-    object-fit: contain;
-    padding: 30px
-}
-
-.card h2 {
-    font-size: 1rem
-}
-
-.card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, .12), 0 4px 8px rgba(0, 0, 0, .06)
-}
-
-.label-top {
-    position: absolute;
-    background-color: #8bc34a;
-    color: #fff;
-    top: 8px;
-    right: 8px;
-    padding: 5px 10px 5px 10px;
-    font-size: .7rem;
-    font-weight: 600;
-    border-radius: 3px;
-    text-transform: uppercase
-}
-
-.top-right {
-    position: absolute;
-    top: 24px;
-    left: 24px;
-    width: 90px;
-    height: 90px;
-    border-radius: 50%;
-    font-size: 1rem;
-    font-weight: 900;
-    background: #ff5722;
-    line-height: 90px;
-    text-align: center;
-    color: white
-}
-
-.top-right span {
-    display: inline-block;
-    vertical-align: middle
-}
-
-@media (max-width: 768px) {
-    .card-img-top {
-        max-height: 250px
-    }
-}
-
-.over-bg {
-    background: rgba(53, 53, 53, 0.85);
-    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-    backdrop-filter: blur(0.0px);
-    -webkit-backdrop-filter: blur(0.0px);
-    border-radius: 10px
-}
 
 .btn {
     font-size: 1rem;
@@ -155,94 +72,17 @@ h2 {
     box-shadow: -1px 6px 13px rgba(255, 150, 43, 0.35)
 }
 
-.bg-success {
-    font-size: 1rem;
-    background-color: #f7810a !important
-}
-
-.bg-danger {
-    font-size: 1rem
-}
-
 .price-hp {
     font-size: 1rem;
     font-weight: 600;
     color: darkgray
 }
-
-.amz-hp {
-    font-size: .7rem;
-    font-weight: 600;
-    color: darkgray
-}
-
-.fa-question-circle:before {
-    color: darkgray
-}
-
-.fa-plus:before {
-    color: darkgray
-}
-
-.box {
-    border-radius: 1rem;
-    background: #fff;
-    box-shadow: 0 6px 10px rgb(0 0 0 / 8%), 0 0 6px rgb(0 0 0 / 5%);
-    transition: .3s transform cubic-bezier(.155, 1.105, .295, 1.12), .3s box-shadow, .3s -webkit-transform cubic-bezier(.155, 1.105, .295, 1.12)
-}
-
-.box-img {
-    max-width: 300px
-}
-
-.thumb-sec {
-    max-width: 300px
-}
-
-@media (max-width: 576px) {
-    .box-img {
-        max-width: 200px
-    }
-
-    .thumb-sec {
-        max-width: 200px
-    }
-}
-
-.inner-gallery {
-    width: 60px;
-    height: 60px;
-    border: 1px solid #ddd;
-    border-radius: 3px;
-    margin: 1px;
-    display: inline-block;
-    overflow: hidden;
-    -o-object-fit: cover;
-    object-fit: cover
-}
-
-@media (max-width: 370px) {
-    .box .btn {
-        padding: 5px 40px 5px 40px;
-        font-size: 1rem
-    }
-}
-
-.disclaimer {
-    font-size: .9rem;
-    color: darkgray
-}
-
-.related h3 {
-    font-weight: 900
-}
-
     </style>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#"><h2 class="text-warning">RoadMáquinas</h2></a>
+            <a class="navbar-brand" href="/home"><h2 class="text-warning">RoadMáquinas</h2></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mob-navbar" aria-label="Toggle">
             <span class="navbar-toggler-icon"></span>
             </button>
@@ -281,55 +121,95 @@ h2 {
     <!-- Bootstrap JS -->
     <script src="https://www.markuptag.com/bootstrap/5/js/bootstrap.bundle.min.js"></script>
     <main>
-    <div class="container-fluid bg-trasparent my-4 p-3" style="position: relative;">
-        <div class="row row-cols-1 row-cols-xs-2 row-cols-sm-2 row-cols-lg-4 g-3">
-            <div class="col">
-                <div class="card h-100 shadow-sm"> <img src="https://static.wixstatic.com/media/69d861_be09851326c9444d945525bb060ba1fa~mv2.jpeg/v1/fill/w_406,h_400,al_c,q_80,usm_0.66_1.00_0.01/empacotadora.webp" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <div class="clearfix mb-3"> <span class="float-start price-hp">Empacotadora</span> <span class="float-end"> </div>
-                        <h5 class="card-title">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam quidem eaque ut eveniet aut quis rerum. Asperiores accusamus harum ducimus velit odit ut. Saepe, iste optio laudantium sed aliquam sequi.</h5>
-                        <div class="text-center my-4"> <a href="#" class="btn btn-warning">SAIBA MAIS</a> </div>
+    <!--Section: Contact v.2-->
+    <section class="mb-5">
+
+    <!--Section heading-->
+    <h2 class="h1-responsive font-weight-bold text-center my-4">Contate-nos</h2>
+    <!--Section description-->
+    <p class="text-center w-responsive mx-auto mb-5">Você tem alguma pergunta? Por favor, não hesite em nos contatar diretamente. Nossa equipe entrará em contato com você em questão de horas para ajudá-lo.</p>
+
+    <div class="row pl-5">
+
+        <!--Grid column-->
+        <div class="col-md-8 mb-md-0 mb-5">
+            <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+
+                <!--Grid row-->
+                <div class="row">
+
+                    <!--Grid column-->
+                    <div class="col-md-6">
+                        <div class="md-form mb-0">
+                            <input type="text" id="name" name="name" class="form-control">
+                            <label for="name" class="">Seu nome</label>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-md-6">
+                        <div class="md-form mb-0">
+                            <input type="text" id="email" name="email" class="form-control">
+                            <label for="email" class="">Seu email</label>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                </div>
+                <!--Grid row-->
+
+                <!--Grid row-->
+                <div class="row">
+
+                    <!--Grid column-->
+                    <div class="col-md-12">
+
+                        <div class="md-form">
+                            <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+                            <label for="message">Sua menssagem</label>
+                        </div>
+
                     </div>
                 </div>
+                <!--Grid row-->
+
+            </form>
+
+            <div class="text-center text-md-left">
+                <a class="btn btn-warning" onclick="document.getElementById('contact-form').submit();">Enviar</a>
             </div>
-            <div class="col">
-                <div class="card h-100 shadow-sm"> <img src="https://static.wixstatic.com/media/69d861_6ca1d96ce67d4100b95dfc378777c8bd~mv2.jpg/v1/fill/w_400,h_387,al_c,q_80/69d861_6ca1d96ce67d4100b95dfc378777c8bd~mv2.webp" class="card-img-top" alt="...">
-                    <div class="label-top shadow-sm">Automática</div>
-                    <div class="card-body">
-                        <div class="clearfix mb-3"> <span class="float-start price-hp">Fechadora de Caixas</span> <span class="float-end"></span> </div>
-                        <h5 class="card-title">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam quidem eaque ut eveniet aut quis rerum. Asperiores accusamus harum ducimus velit odit ut. Saepe, iste optio laudantium sed aliquam sequi.</h5>
-                        <div class="d-grid gap-2 my-4"> <a href="#" class="btn btn-warning">SAIBA MAIS</a> </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card h-100 shadow-sm"> <img src="https://static.wixstatic.com/media/69d861_2273fa8d95e845ff8e6d1477d0b1b247~mv2.png/v1/fill/w_172,h_253,al_c,q_85/69d861_2273fa8d95e845ff8e6d1477d0b1b247~mv2.webp" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <div class="clearfix mb-3"> <span class="float-start price-hp">Dosador Linear</span> <span class="float-end"></span> </div>
-                        <h5 class="card-title">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam quidem eaque ut eveniet aut quis rerum. Asperiores accusamus harum ducimus velit odit ut. Saepe, iste optio laudantium sed aliquam sequi.</h5>
-                        <div class="text-center my-4"> <a href="#" class="btn btn-warning">SAIBA MAIS</a> </div>
-                        <div class="clearfix mb-1"> <span class="float-start"><i class="far fa-question-circle"></i></span> <span class="float-end"><i class="fas fa-plus"></i></span> </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card h-100 shadow-sm"> <img src="https://static.wixstatic.com/media/69d861_b018fd34d9ed41ceba274d09a5dac0ff~mv2.png/v1/fill/w_400,h_499,al_c,q_85/69d861_b018fd34d9ed41ceba274d09a5dac0ff~mv2.webp" class="card-img-top" alt="...">
-                    <div class="label-top shadow-sm">Acessório</div>
-                    <div class="card-body">
-                        <div class="clearfix mb-3"> <span class="float-start price-hp">Esteira Transportadora</span> <span class="float-end"></span> </div>
-                        <h5 class="card-title">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam quidem eaque ut eveniet aut quis rerum. Asperiores accusamus harum ducimus velit odit ut. Saepe, iste optio laudantium sed aliquam sequi.</h5>
-                        <div class="text-center my-4"> <a href="#" class="btn btn-warning">SAIBA MAIS</a> </div>
-                        <div class="clearfix mb-1"> <span class="float-start"><i class="far fa-question-circle"></i></span> <span class="float-end"><i class="fas fa-plus"></i></span> </div>
-                    </div>
-                </div>
-            </div>
+            <div class="status"></div>
         </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-md-3 text-center">
+            <ul class="list-unstyled mb-0">
+                <li><i class="fas fa-map-marker-alt fa-2x"></i>
+                    <p>R. do Bom Jesus, 125 - Recife </p>
+                </li>
+
+                <li><i class="fas fa-phone mt-4 fa-2x"></i>
+                    <p>(81) 99991-4471 </p>
+                </li>
+
+                <li><i class="fas fa-envelope mt-4 fa-2x"></i>
+                    <p>contato@roadmaquinas.com</p>
+                </li>
+            </ul>
+        </div>
+        <!--Grid column-->
+
     </div>
+
+</section>
+<!--Section: Contact v.2-->
 </main>
 </body>
 
-<footer class="row bg-secondary text-white py-4 mt-auto">
-                      <div class="container p-5 pb-0">
+     <footer class="row bg-secondary text-white py-4 mt-auto">
+        <div class="container p-5 pb-0">
                 <!-- Section: Links -->
                 <section>
                   <!--Grid row-->
@@ -395,5 +275,5 @@ h2 {
                   <!--Grid row-->
                 </section>
               </div>
-            </footer>
+     </footer>
 </html>
